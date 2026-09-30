@@ -21,7 +21,7 @@
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Arial,Helvetica,sans-serif;background:#06162c;color:#fff}
   body{display:flex;align-items:stretch;justify-content:center}
-  .app{width:100%;height:100%;min-height:100vh;background:
+  .app{width:100%;height:100dvh;min-height:100dvh;;background:
     radial-gradient(circle at 50% 30%,rgba(0,116,255,.28),transparent 40%),
     linear-gradient(180deg,#071c36 0%,#031021 100%);
     position:relative;overflow:hidden}
@@ -200,8 +200,7 @@
   .again{margin-top:30px;background:#0876e8;border:0;color:#fff;border-radius:9px;padding:18px 34px;font-size:20px;font-weight:800;cursor:pointer}
   @media(max-width:700px){
     .topbar{height:62px;padding:0 18px}.logo{font-size:24px}.nav{display:none}
-    .screen{height:auto;min-height:calc(100% - 62px);padding:20px 15px 20px;overflow-y:auto;
-  overflow-x:hidden;}
+    .screen{height:calc(100dvh - 62px);min-height:0;padding:20px 15px 20px;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;}
     h1{font-size:31px;margin-bottom:17px}
     .choices{gap:9px}
     .choice{min-height:112px;font-size:18px;padding:12px;border-radius:9px}
