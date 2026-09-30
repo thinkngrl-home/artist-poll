@@ -423,8 +423,10 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 
   enter.addEventListener('click', () => {
   if (enter.disabled) return;
-  document.querySelector('.terms-text').scrollTop = 0;
   terms.classList.add('show');
+  requestAnimationFrame(() => {
+    document.querySelector('.terms-text').scrollTop = 0;
+  });
 });
 
 accept.addEventListener('click', () => {
